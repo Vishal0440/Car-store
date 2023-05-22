@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    padding: 0 4rem;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px black;
+    background-color: rgb(212, 214, 216);
+    z-index: 10;
+}
+.header-logo i{
+    font-size: 1.5rem;
+    color: orange;
+}
+.menubar i{
+    display: none;
+    font-size: 1.5rem;
+    color: orange;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.navbar li a{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: orange;
+}
+.navbar li a:hover{
+    color: white;
+    background-color: orange;
+}
+.header-btn > Button{
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+.sign-in{
+    color: orange;
+    border: 1px solid orange;
+}
+.sign-up{
+    color: white;
+    background-color: rgb(5, 137, 225);
+    border: none;
+}
+.header-btn > Button:hover{
+    color: white;
+    background-color: orange;
+}
+/* ..................................  */
+
+.home-row{
+    background-color: rgb(212, 214, 216);
+    height: 100vh;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.home-col1{
+    flex-basis: 50%;
+}
+.home-col1 h1{
+    font-size: 3rem;
+}
+.home-col1 span{
+    color: rgb(227, 101, 16);
+}
+.home-col1 p{
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+.store-icon{
+    display: flex;
+    gap: 1rem;
+}
+.store-icon>img{
+    width: 150px;
+}
+.home-col2{
+    flex-basis: 50%;
+}
+.home-col2 img{
+    width: 100%;
+}
+
+/* ..................  */
+/* Menu section  */
+
+.menu{
+    padding-top: 2rem;
+    text-align: center;
+    background-color: rgb(241, 242, 244);
+}
+.menu h2{
+    padding-top: 1rem;
+    color: orange;
+}
+.menu-row{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.menu-colum{
+    box-shadow: 0 0 1px orange;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease-in;
+}
+.menu-colum:hover{
+    box-shadow: 0 0 5px orange;
+    transform: translateY(-5px);
+}
+.menu i{
+    font-size: 2rem;
+    background-color: rgb(53, 52, 52 ,0.8);
+    padding: 0.6rem;
+    border-radius: 10px;
+    color: orange;
+}
+.menu >p{
+    font-weight: 600;
+    color: rgb(71, 70, 69);
+}
+.menu-colum h3{
+    padding: 1rem;
+    color: orange;
+}
+
+/* .......................  */
+/* explore section  */
+
+.explore{
+    padding-top: 2rem;
+}
+.explore p{
+    text-align: center;
+    font-weight: 600;
+    color: rgb(71, 70, 69);
+}
+.explore h2{
+    text-align: center;
+    padding: 1rem;
+    color: orange;
+}
+.explore-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 1rem;
+}
+.explore-colum{
+    width: 400px;
+    box-shadow: 0 0 5px rgb(209, 196, 196) ;
+  }
+  .explore-colum:hover img{
+    transition: all 1s ease;
+    transform: scaleX(-1);
+}
+.explore-colum>img{
+    width: 100%;
+    box-sizing: border-box;
+}
+.explore-colum p{
+    margin: 5px;
+    border: 1px solid rgb(168, 151, 151);
+    padding: 0.2rem;
+    width: 55px;
+    border-radius: 5px;
+}
+.explore-colum h3{
+    margin: 5px;
+    color: orange;
+    padding: 0.5rem 0;
+}
+.explore-colum h4{
+    margin: 5px;
+    padding-bottom: 0.5rem;
+}
+.explore-colum button{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgb(8, 204, 222);
+    cursor: pointer;
+    background-color: rgb(5, 137, 225);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s linear;
+
+}
+.explore-colum button:hover{
+    background-color: orange;
+}
+
+/* ..........................  */
+/* about section  */
+
+.about{
+    background-color: rgb(241, 242, 244);
+}
+.about h2{
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: 600;
+    color: orange;
+}
+.about-row{
+    padding: 3rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-coloum1{
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+.about-coloum1>img{
+    width: 100%;
+    padding: 1rem;
+}
+.about-coloum2{
+    padding: 1rem;
+    flex-basis: 50%;
+}
+.tab-btn{
+    background-color: orange;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: white;
+}
+.about-content{
+    margin-top: 1rem;
+}
+.content h4{
+    text-transform: capitalize;
+    color: orange;
+}
+.content p{
+    color: rgb(71, 70, 69); 
+    padding: 1rem 0;
+    letter-spacing: 1px;
+}
+  /* hide content */
+
+  .content {
+    display: none;
+  }
+  .tab-btn.active {
+    background: rgb(66, 137, 208);
+  }
+  .content.active {
+    display: block;
+  }
+
+  /* .....................  */
+/* customer section  */
+
+.customer{
+    text-align: center;
+}
+.customer .para{
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(71, 70, 69); 
+}
+.customer h1{
+    padding-top: 1rem;
+    font-weight: 600;
+    color: orange;
+}
+.customer-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+.customer-coloum{
+    width: 400px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgb(157, 157, 157);
+    transition: all 0.3s ease;
+}
+.customer-coloum:hover{
+    transform: translateY(-10px);
+}
+.customer-coloum img{
+    width: 100px;
+    padding: 0.5rem;
+    background-color: orange;
+    border-radius: 100%;
+}
+.customer-coloum h2{
+    color: orange;
+}
+.customer-coloum p{
+    padding-top: 0.5rem;
+    color: rgb(71, 70, 69); 
+}
+
+/* ..................  */
+/* Questions */
+
+  .section-center h2 {
+    color: orange;
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+  .section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .question {
+    box-shadow: 0 0 5px black;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  .question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+  }
+  .question-title p {
+    color: orange;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+  }
+  .question-btn {
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  .question-text {
+    padding: 1rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  .question-text p{
+    color: rgb(47, 46, 43);
+    letter-spacing: 1px;
+  }
+  /* hide text */
+  
+  .show-text .question-text {
+    display: block;
+  }
+  .minus-icon {
+    color: orange;
+    display: none;
+  }
+  .plus-icon {
+    color: orange;
+  }
+  .show-text .minus-icon {
+    display: inline;
+  }
+  .show-text .plus-icon {
+    display: none;
+  }
+
+  /* ..................  */
+/* subscribe section */
+
+ .subscribe{
+    width: 100%;
+    height: 200px;
+    padding-top: 2rem;
+    background-color: coral;
+    text-align: center;
+}
+ .subscribe h1{
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+}
+ .subscribe input{
+    width: 18rem;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid coral;
+    outline: none;
+}
+ .subscribe button{
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid orange;
+    cursor: pointer;
+    background-color: rgb(17, 117, 217);
+    color: rgb(255, 255, 255);
+}
+.subscribe button:hover{
+    background-color: orange;
+}
+
+/* .................  */
+/* footer section  */
+footer{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: orange;
+}
+footer i{
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: orange;
+}
+footer i:hover{
+    transform: scale(1.2);
+}
+
+/* .............................  */
+/* responsive  */
+@media (max-width:968px) {
+    .navbar{
+        display: block;
+        flex-direction: column;
+        width: 100vw;
+        height: 50vh;
+        position: absolute;
+        top: 50px;
+        left: -1000px;
+        background-color: rgb(212, 214, 216);
+        transition: all 0.5s ease-in;
+        box-shadow: 0 0 2px black;
+    }
+    .active{
+        left: 0px;
+    }
+    .navbar li{
+        margin-top: 10px;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .header-btn > Button{
+        padding: 5px;
+    }
+    .menubar i{
+        margin-left: 5.5rem;
+        display: block;
+    }
+    header{
+        padding: 2rem;
+    }
+    /* ...... */
+    .home-col1{
+        padding-top: 5rem;
+        flex-basis: 100%;
+    }
+    .home-col1 h1{
+        font-size: 2rem;
+    }
+    .home-col2{
+        flex-basis: 100%;
+    }
+    /* menu  */
+    .menu-row{
+        padding: 2rem;
+    }
+
+    /* customer  */
+    .customer-row{
+        padding: 2rem;
+    }
+    .customer-coloum{
+        margin: 5px;
+    }
+   
+    /* about  */
+    .about-row{
+        padding: 1rem;
+    }
+    .about-coloum1{
+        flex-basis: 100%;
+    }
+    .about-coloum2{
+        flex-basis: 100%;
+    }
+    /* subscribe section */
+    .subscribe h1{
+    font-size: 2rem;
+    }
+    .subscribe input{
+    width: 12rem;
+}
+   
+}
